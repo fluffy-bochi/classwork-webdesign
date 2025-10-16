@@ -15,4 +15,4 @@
 （ここに画像をドラッグ＆ドロップしてアップロードしてもOK）
 
 ## 🌐 公開ページ
-👉 [こちらから閲覧できます](https://ユーザー名.github.io/portfolio-html-css/)
+👉 [こちらから閲覧できます]( https://fluffy-bochi.github.io/classwork-webdesign/)
