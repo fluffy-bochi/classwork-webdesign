@@ -1,0 +1,78 @@
+#main { /* '#'の直後にHTMLのid="○○○"で指定した，○○○を記述します */
+	clear : left ;	/* float: leftで指定された要素の回り込みを解除して，その要素の下に配置されるようにします */
+	width : 1000px ;	/* ブロックやimg要素の幅を数値や%で指定．*/
+	height : 500px ;	/* ブロックやimg要素の高さを数値や%で指定．*/
+	background-image : url("../image/index_background.png") ;	/* ファイル名を指定（日本語ファイル名は不可） */
+}
+
+img {
+	margin : 30px ;	/* ボックスのマージンを，上下左右まとめて指定．emとex以外の単位が使用できます．*/
+}
+
+h1 {
+	color : white ; /* 色をキーワード16色から選択します */ 
+	text-align : center ;	/* ブロック内の要素を中央にそろえます（ブロック全体を中央にするにはmargin-left,margin-rightをautoにする設定を併用します） */
+	line-height : 200%;	/* 相対的に行間を指定します（単位として%,px,em,exが使えます）
+ */
+	font-size : 50px;	/* 相対的に大きさを指定します（単位としてpx,em,ex,%が使えます） */
+	margin : -20px 0px 0px;	/* ボックスのマージンを3つの値で指定．1つ目が上，2つ目が左右，3つ目が下の数値になる．emとex以外の単位が使用できます．*/
+}
+
+h2 {
+	color : white ; /* 色をキーワード16色から選択します */ 
+	border-top : solid 1px #ffffff ;	/* 上のボーダーの[style] [width] [color]を半角スペースで区切り，任意の順番で記述 */
+	border-bottom : solid 1px #ffffff ;	/* 下のボーダーの[style] [width] [color]を半角スペースで区切り，任意の順番で記述 */
+	width : 450px ;	/* ブロックやimg要素の幅を数値や%で指定．*/
+	margin-left : 25px ;	/* ボックスの左マージンを数値で指定．emとex以外の単位が使用できます．*/
+}
+
+
+#profile {
+	width: 500px;
+	height : 448px ;	/* ブロックやimg要素の高さを数値や%で指定．*/
+	color: #000000;
+	float: left;	/* subを左側に配置 */
+	margin-top : 148px ;	/* ボックスの上マージンを数値で指定．emとex以外の単位が使用できます．*/
+text-align : center ;	/* ブロック内の要素を中央にそろえます（ブロック全体を中央にするにはmargin-left,margin-rightをautoにする設定を併用します） */
+	background-image : url("../image/background.jpg") ;	/* ファイル名を指定（日本語ファイル名は不可） */
+	background-image : url("../image/0_profile_img.png") ;
+}
+
+#works {
+	width: 500px;
+	color: #000000;
+	float: left;	/* mainをsubに続けて配置 */
+	margin-top : 148px ;	
+	text-align : center ;	
+	background-image : url("../image/background.jpg") ;	/* ファイル名を指定（日本語ファイル名は不可） */
+}
+
+table {
+	width : 500px ;	/* ブロックやimg要素の幅を数値や%で指定．*/
+	color : #ffffff ; /* 色を16進数で表します（基本的にセーフカラー216色を使用します） */
+}
+
+tr {
+	width : 250px ;	/* ブロックやimg要素の幅を数値や%で指定．*/
+}
+
+th {
+	padding-bottom : 10px ;	/* ボックスの下パディングを数値で指定．*/
+}
+
+
+
+td {
+	
+}
+
+
+.kind {
+	text-align : right ;	/* ブロック内の要素を右にそろえます（ブロック全体を右に寄せるにはfloatを使用します） */
+	margin-right : 5px ;	/* ボックスの右マージンを数値で指定．emとex以外の単位が使用できます．*/
+}
+
+.contents {
+	text-align : left ;	/* ブロック内の要素を左にそろえます（ブロック全体を左に寄せるにはfloatを使用します） */
+	margin-left : 5px ;	/* ボックスの左マージンを数値で指定．emとex以外の単位が使用できます．*/
+}

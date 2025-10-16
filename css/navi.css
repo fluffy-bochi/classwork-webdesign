@@ -1,0 +1,70 @@
+/*
+	WebDesigning（毎日コミュニケーション）2007年2月号の素材を参考にしています
+*/
+
+/*
+	タブに使用する画像 "tab.gif" について
+	サイズは600x600ピクセル
+	３つの状態を表す画像が１つのファイルに収められている
+	※「・」の記号はタブの角丸を表わしている
+	
+	・────────────・　←画像の一番上（0px）…領域１
+	│通常リンクの背景　　　　│　※薄いグレー
+	└────────────┘
+	　
+	・────────────・　←上から200pixel…領域２
+	│マウスオーバー時の背景　│　※濃いグレー
+	└────────────┘
+	　
+	・────────────・　←上から400pixel…領域３
+	│現在の表示ページの背景　│　※白にグレーの枠線
+	└────────────┘
+	
+*/
+/* ナビゲーション
+------------------------------------------------------------ */
+nav {
+	width : 1000px ;	/* ブロックやimg要素の幅を数値や%で指定．*/
+}
+
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	float: left;	/* リストの各項目を左に寄せています．すべての項目に設定されるので，項目が次々と横にならびます．"display:inline"を設定しなくても並んでいくのがポイント */
+	margin: 0 0 0 2px;	/* 左マージン */
+	padding: 0 10px 0 0;	/* 右パディング */
+	border-bottom: 2px solid #fff;
+	font-size: small;
+	white-space: nowrap;	/* ナビの各文字列を改行しないように設定 */
+	color: #666666;	/* 基本の文字色 */
+	background: white url("../image/tab_yuna.png") 100% 0px no-repeat;	/* 表示位置を右上にしているので，タブ画像の右肩の角丸が表示される(※1) */
+}
+
+nav li.current {	/* カレントページ（現在表示中のページ） */
+	background-position: 100% -400px;	/* ※1で画像ファイルを指定しておき，カレントページに対してだけ，表示位置を400ピクセルあげて領域３を表示させている．これもタブの右肩だけ表示（※2） */
+}
+
+nav a, nav li.current span {
+	display: block;	/* リンクとカレントページ部分をブロック要素にしている（"block_color.html"と同じことをしている） */
+	padding: 5px 0px 3px 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	background: white url("../image/tab_yuna.png") 0% 0px no-repeat;	/* ここでタブ画像の左肩を※1に重ねて表示している（※1とセットでタブの形になる．また左右を別々に指定しているので，どのような長さの文字列にも対応できる．また，<a>タグに適用しているので，<li>に適用している右肩には重ならない） */
+}
+
+nav li.current span {
+	color: #666666;
+	background: white url("../image/tab_yuna.png") 0% -400px no-repeat;	/* ここでタブ画像の左肩を※2に重ねて表示している */
+}
+
+nav li:hover         { background-position: 100% -200px; }	/* リンク項目にマウスを載せると，画像ファイルの表示位置を200ピクセルあげて領域２の右肩を表示させる（※3） */
+nav li.current:hover { background-position: 100% -400px; }	/* ただしカレントページだけは変更がないようにする（上の設定を無効にするため，表示位置を400ピクセルあげて領域３の右肩を表示させている） */
+nav li:hover a       { color: white; background-position:   0% -200px; }	/* リンク項目の左肩を表示している．※3とセットでリンク部分のマウスオーバーを設定 */

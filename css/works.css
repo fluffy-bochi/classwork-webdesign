@@ -1,0 +1,73 @@
+#works { /* '#'の直後にHTMLのid="○○○"で指定した，○○○を記述します */
+	clear : left ;	/* float: leftで指定された要素の回り込みを解除して，その要素の下に配置されるようにします */
+	width : 1000px ;	/* ブロックやimg要素の幅を数値や%で指定．*/
+	text-align : center ;	/* ブロック内の要素を中央にそろえます（ブロック全体を中央にするにはmargin-left,margin-rightをautoにする設定を併用します） */
+	background-image : url("../image/background.jpg") ;	
+}
+
+#aim {
+	float : left ;	/* この要素を左に配置して，後に続く内容を右に回り込ませます．この要素にはwidthで幅を指定しておく必要があります */
+	width : 450px ;	/* ブロックやimg要素の幅を数値や%で指定．*/
+	margin : 0px 50px 0px 0px;	/* ボックスのマージンを上，右，下，左の順で指定．時計回りと覚えます．emとex以外の単位が使用できます．*/
+}
+
+#goal {
+	float : left ;	/* この要素を左に配置して，後に続く内容を右に回り込ませます．この要素にはwidthで幅を指定しておく必要があります */
+	width : 450px ;	
+	margin : 0px 0px 0px 50px;	
+}
+
+#eval {
+	clear : left ;	/* float: leftで指定された要素の回り込みを解除して，その要素の下に配置されるようにします */
+}
+
+
+h1 {
+	clear : left ;	/* float: leftで指定された要素の回り込みを解除して，その要素の下に配置されるようにします */
+	color : white ; /* 色をキーワード16色から選択します */ 
+	padding : 20px 0px;	/* ボックスのパディングを2つの値で指定．1つ目が上下，2つ目が左右の数値になる．*/
+	text-align : center ;	/* ブロック内の要素を中央にそろえます（ブロック全体を中央にするにはmargin-left,margin-rightをautoにする設定を併用します） */
+	border-bottom : solid 1px #ffffff ;	/* 下のボーダーの[style] [width] [color]を半角スペースで区切り，任意の順番で記述 */
+}
+
+h2 {
+	border-left : solid 7px #cccc99 ;	/* 左のボーダーの[style] [width] [color]を半角スペースで区切り，任意の順番で記述 */ 
+	border-bottom : solid 1px #cccc99 ;	/* 下のボーダーの[style] [width] [color]を半角スペースで区切り，任意の順番で記述 */
+}
+
+p {
+	margin-left : 17px ;	/* ボックスの左マージンを数値で指定．emとex以外の単位が使用できます．*/
+}
+
+.img {
+	color : white ; /* 色をキーワード16色から選択します */
+	padding-top : 100px ;	/* ボックスの上パディングを数値で指定．*/
+	font-size : x-large ;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.pagetop {
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	background: #fff;
+	border: solid 2px #000;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+
+.pagetop__arrow {
+	height: 10px;
+	width: 10px;
+	border-top: 3px solid #000;
+	border-right: 3px solid #000;
+	transform: translateY(20%) rotate(-45deg);
+}

@@ -1,0 +1,4 @@
+body {
+	margin : 0 auto;
+	width : 1000px ;	/* ブロックやimg要素の幅を数値や%で指定．*/
+}
